@@ -75,15 +75,45 @@
 			</div>
 		</section>
 
-		<section style="padding:0;">
-    		<div class="bawah" style="padding:0;">
-    			<h5>
-    				© WEBGIS Risiko Bencana Gempa Bumi Kota Palu
-    			</h5>
-    			<h5> Gabriella Trisna Yudhanti | Email: gabriellatrisna@mail.ugm.ac.id </h5>
+		<!-- FITUR RECOVERY YANG NYAMBUNG UI -->
+<section class="recovery-section">
+  <h2>Panduan Recovery Gempa</h2>
+  <p>Langkah cepat pemulihan setelah bencana</p>
+
+  <button class="recovery-button" onclick="bukaPanduan()">
+    Lihat Panduan Recovery
+  </button>
+
+  <div id="panduanPopup" class="recovery-popup">
+    <h3>Langkah Pemulihan Setelah Gempa</h3>
+    <ul>
+      <li>Segera menuju area terbuka</li>
+      <li>Hindari struktur bangunan rusak</li>
+      <li>Periksa kondisi anggota keluarga</li>
+      <li>Ikuti instruksi dari petugas</li>
+      <li>Datangi posko bantuan terdekat</li>
+    </ul>
+
+    <button class="recovery-button" onclick="tutupPanduan()" style="margin-top:15px;">
+      Tutup
+    </button>
+  </div>
+</section>
+
     			
     		</div>
     	</section>
+
+		<script>
+function bukaPanduan() {
+  document.getElementById("panduanPopup").style.display = "block";
+}
+
+function tutupPanduan() {
+  document.getElementById("panduanPopup").style.display = "none";
+}
+</script>
+
 	</body>
 
 </html>
