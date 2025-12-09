@@ -255,3 +255,44 @@ section {
 			padding-left: 10px;
 	}
 }
+
+/* === FITUR RECOVERY STYLE === */
+.recovery-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.recovery-section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.recovery-button {
+  margin-top: 20px;
+  padding: 15px 40px;
+  background: #e63946;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.recovery-button:hover {
+  background: #c71d2f;
+}
+
+/* popup */
+.recovery-popup {
+  display: none;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: left;
+}
